@@ -1,5 +1,6 @@
 import React from 'react'
 import data from '../database/data'
+import './Question.css'
 
 function Question(props) {
 

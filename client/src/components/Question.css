@@ -1,0 +1,24 @@
+.Question {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.Question h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.Question input[type="radio"] {
+    margin-right: 10px;
+}
+
+.Question label {
+    font-size: 16px;
+    color: #555;
+}

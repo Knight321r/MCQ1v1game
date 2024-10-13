@@ -13,6 +13,7 @@ import Gameroom from "./components/Gameroom";
 import { jwtDecode } from "jwt-decode";
 import { setusername } from "./components/reducer";
 import Result from "./components/Result";
+import Maincomp from "./components/Maincomp";
 
 function App() {
 
@@ -30,12 +31,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={
-            <div>
-              <Navbar /> 
-              <h1>Welcome to MCQ App</h1>
-              <EnterLobbyButton />
-              <EnterLoginButton />
-            </div>
+            <Maincomp />
           } />
           <Route path="/Signup" element={<Signup />} />
           <Route 
@@ -53,12 +49,12 @@ function App() {
   );
 }
 
-function EnterLoginButton(){
+export function EnterLoginButton(){
   const navigate = useNavigate();
   return <button onClick={(e) => navigate('/login')}>Login</button>
 }
 
-function EnterLobbyButton() {
+export function EnterLobbyButton() {
   const navigate = useNavigate();
   // const username = useSelector(state => state.user.username);
   const token = localStorage.getItem("token");

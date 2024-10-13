@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios'
+import './Mcqlist.css'
 
 function Mcqlist() {
     const [mcq, setmcq] = useState([]);

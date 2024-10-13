@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import socket from './socket';
+import Login from './Login';
+import './Signup.css'
 
 function Userprofile() {
     const [mcqlist, setmcqlist] = useState([])
@@ -37,6 +39,7 @@ function Userprofile() {
       }
       catch(error){
         alert('login expired, re-login')
+        navigate('/')
         console.error('error in fetchmcqlist', error);
       }
     }

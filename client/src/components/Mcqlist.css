@@ -1,0 +1,37 @@
+.Mcqlist {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Mcqlist h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Mcqlist button {
+    background-color: #ffc107;
+    padding: 8px 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.Mcqlist button:hover {
+    background-color: #e0a800;
+}
+
+.Mcqlist h3 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.Mcqlist p {
+    font-size: 16px;
+}

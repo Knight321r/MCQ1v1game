@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setusername, setpassword, setemail } from './reducer';
 import axios from 'axios';
 import { Navigate, useNavigate } from 'react-router-dom';
+import './Signup.css'
 function Signup() {
 
 

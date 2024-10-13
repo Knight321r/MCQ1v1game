@@ -79,7 +79,7 @@ io.on('connection', (socket) => {
         }
     })
 
- 
+       
     socket.on('submitAnswer', (itemId, answerIndex) => {
         if (gameRooms[itemId] && gameRooms[itemId].status === 'playing') {
             const player = gameRooms[itemId].players.find(p => p.id === socket.id);
@@ -102,7 +102,7 @@ io.on('connection', (socket) => {
 function startGame(itemid){
     io.to(itemid).emit('gameUpdate', gameRooms[itemid]);
     io.to(itemid).emit('nextQuestion', gameRooms[itemid].questions[0]);
-}
+}     
 
 function nextQuestion(itemId, socket) {
     const player = gameRooms[itemId].players.find(p => p.id === socket.id)

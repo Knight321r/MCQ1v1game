@@ -5,6 +5,7 @@ import { Navigate, useNavigate } from 'react-router-dom';
 import Lobby from './Lobby';
 import Signup from './Signup';
 import axios from 'axios';
+import './Login.css'
 
 function Login() {
 

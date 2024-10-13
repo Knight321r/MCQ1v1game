@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import {jwtDecode} from 'jwt-decode';
 import { useSelector } from 'react-redux';
+import './Gameroom.css'
 
 function Gameroom() {
 

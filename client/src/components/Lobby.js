@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import {jwtDecode} from 'jwt-decode';
 import socket from './socket';
 import { useNavigate } from 'react-router-dom';
+import './Lobby.css'
 
 function Lobby() {
 

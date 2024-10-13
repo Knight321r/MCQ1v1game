@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import socket from './socket'
 import { useNavigate } from 'react-router-dom'
+import './Signup.css'
 
 function Result() {
     const [scores, setScores] = useState([])
@@ -30,7 +31,7 @@ function Result() {
             <p>Username is {item.username} , Score : {item.score}</p>
         </div>
       ))}
-      <h3>result is kanapadatle, ledante ikkada vastadi choodu -> {result}</h3>
+      <h3>result : {result}</h3>
       <button onClick={handlebutton}>Go back to home</button>
     </div>
   )
